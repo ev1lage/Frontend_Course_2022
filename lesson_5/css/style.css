@@ -1,0 +1,106 @@
+/* Комбінація класів */
+/* text ТА lesson */
+/*
+.text,
+.lesson{
+	color: red;
+}
+*/
+/* text ТА lesson ОДНОЧАСНО!!! */
+/*
+.text.lesson{
+	color: red;
+}
+*/
+
+/* Вкладеність класів */
+/*
+.text .lesson {
+	color: red;
+}
+*/
+
+/* -------- ПРІОРИТЕТ СЕЛЕКТОРІВ ------------ */
+/*
+Основні правила формування пріоритетів: 
+1) У випадку рівнозначних селекторів більший 
+пріоритет буде у останього по коду.
+2) Більший пріоритет завжди буде у селектора,
+який звужує (уточює, конкретизує) пошук (запит).
+3) Пріоритет у рядкових (inline) стилів (атрибут style="") вищий ніж у стилів з окремого файлу (наприклад style.css)
+4) Флаг !important перезаписує пріоритет (не рекомендується)
+*/
+
+/*
+../ - вийти з папки на один рівень вище
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300;1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+	font-family: "Steclo-ExtraLightItalic";
+	src: url(../fonts/Steclo-ExtraLightItalic.woff2) format("woff2"), url(../fonts/Steclo-ExtraLightItalic.woff) format("woff");
+	font-display: swap;
+	font-weight: 200;
+	font-style: italic;
+}
+
+a:hover{
+	color: pink;
+}
+
+.header{
+	background-color: rgb(184, 184, 184);
+	text-align: center;
+	word-spacing: 80px;
+	letter-spacing: 5px;
+	padding: 30px 0 30px 0;
+	font-family: "Steclo-ExtraLightItalic";
+	font-size: 20px;
+	color: #000;
+}
+
+main{
+	margin-left: 70px;
+	font-family: "Roboto Condensed";
+}
+
+h1{
+	font-size: 30px;
+	margin: 15px 0;
+}
+
+p{
+	text-indent: 10px;
+	margin: 20px 0 20px 0;
+	line-height: 20px;
+}
+.list li{
+	margin-left: 50px;
+	line-height: 50px;
+	text-shadow:  3px 3px 10px #000;
+}
+.footer:hover{
+	color: pink;
+}
+.footer{
+	background-color: rgb(184, 184, 184);
+	text-align: center;
+	font-family: "Steclo-ExtraLightItalic";
+	font-size: 20px;
+	color: #000;
+	letter-spacing: 5px;
+	padding: 30px 0 30px 0;
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+p.text{
+	text-decoration: underline;
+}
+.yearly{
+	text-shadow: 3px 3px 5px rgb(255, 38, 0);
+}
+
+p span{
+	color: blue;
+}
