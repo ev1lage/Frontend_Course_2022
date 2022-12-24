@@ -1,0 +1,113 @@
+/* Комбінація класів */
+/* text ТА lesson */
+/*
+.text,
+.lesson{
+	color: red;
+}
+*/
+/* text ТА lesson ОДНОЧАСНО!!! */
+/*
+.text.lesson{
+	color: red;
+}
+*/
+
+/* Вкладеність класів */
+/*
+.text .lesson {
+	color: red;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+	color: #424551;
+}
+[class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.main {}
+.main__container {}
+
+.p__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 65px;
+}
+.p__image {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.p__image img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.p__main-paragraph {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.p__paragraph {
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+.p__paragraph p{
+	margin-bottom: 22px;
+}
+.p__quotes {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 48px;
+	background: url("../img/icons/braces.svg") 0 0 no-repeat;
+	padding-left: 58px;
+}
+
+.p__paragraph ul{
+	margin-bottom: 24px;
+}
+.p__paragraph li{
+	line-height: 160%;
+	margin-bottom: 4px;
+	background: url("../img/icons/Vector.svg") 0 4px no-repeat;
+	padding-left: 32px;
+}
+
+
+[class*="__background"]{
+	margin-bottom: 20px;
+}
+.block-one__background {
+	background: gray url(../img/Desktop\ setup.jpeg) center / 350px 400px no-repeat;
+}
+.block-two__background {
+	background-color: orange;
+}
+.block-three__background {
+	background: url(../img/johnnyshannon.jpeg) 0 0 / 100px space;
+}
+.block-four__background {
+	background: url(../img/johnnyshannon.jpeg) 0 50% / 100% 100% no-repeat;
+}
+.block-five__background {
+	background: url(../img/Desktop\ setup.jpeg) top left / 150px no-repeat, url(../img/bluntnlove.jpeg) 50% / contain no-repeat, url(../img/johnnyshannon.jpeg) 100% 100% / 150px repeat-x;
+}
+.block-six__background {
+	background: url(../img/johnnyshannon.jpeg) 50% / auto 100% no-repeat fixed;
+}
+.block-seven__background{
+	max-height: 400px;
+	overflow: scroll;
+	background: gray url(../img/Desktop\ setup.jpeg) 0 0 / contain no-repeat local;
+}
+
