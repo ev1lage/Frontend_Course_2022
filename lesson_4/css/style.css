@@ -1,0 +1,123 @@
+/* Комбінація класів */
+/* text ТА lesson */
+/*
+.text,
+.lesson{
+	color: red;
+}
+*/
+/* text ТА lesson ОДНОЧАСНО!!! */
+/*
+.text.lesson{
+	color: red;
+}
+*/
+
+/* Вкладеність класів */
+/*
+.text .lesson {
+	color: red;
+}
+*/
+
+/* -------- ПРІОРИТЕТ СЕЛЕКТОРІВ ------------ */
+/*
+Основні правила формування пріоритетів: 
+1) У випадку рівнозначних селекторів більший 
+пріоритет буде у останього по коду.
+2) Більший пріоритет завжди буде у селектора,
+який звужує (уточює, конкретизує) пошук (запит).
+3) Пріоритет у рядкових (inline) стилів (атрибут style="") вищий ніж у стилів з окремого файлу (наприклад style.css)
+4) Флаг !important перезаписує пріоритет (не рекомендується)
+*/
+
+/*
+../ - вийти з папки на один рівень вище
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+	font-family: "Larsseit", Arial, sans-serif;
+	src: url(../fonts/Larsseit.woff2) format("woff2"), url(../fonts/Larsseit.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit", Arial, sans-serif;
+	src: url(../fonts/Larsseit-Medium.woff2) format("woff2"), url(../fonts/Larsseit-Medium.woff) format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit", Arial, sans-serif;
+	src: url(../fonts/Larsseit-Bold.woff2) format("woff2"), url(../fonts/Larsseit-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Black.woff2) format("woff2"), url(../fonts/Lato-Black.woff) format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+* {
+	font-size: 18px;
+}
+.header,
+.footer{
+	font-family: "Roboto";
+}
+div.sub-title{
+	font-family: "Larsseit";
+}
+.content{
+	color: yellowgreen;
+}
+.container{
+	font-family: "Lato";
+}
+#info-list-four{
+	color: brown;
+}
+p.text,
+.introduction{
+	color: gray;
+}
+h2 {
+	color: coral;
+}
+.image-childhood img{
+	height: 500px;
+	width: 800px;
+}
+.image-started img,
+.image-at-the-peak-of-fame img,
+.image-death img{
+	height: 400px;
+	width: 650px;
+}
+h3 :hover{
+	color: purple;
+	text-decoration: underline;
+}
+h3 :visited{
+	color: green;
+}
